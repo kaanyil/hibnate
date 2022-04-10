@@ -34,7 +34,7 @@ public class RunnerFetch04 {
 
         bookList.forEach(b -> System.out.println(b.getBook_name()));
 
-//		System.out.println(stdRead);
+//		System.out.println(stdRead) ;
 
         //get   the student name, student id, and book name from common records
 
