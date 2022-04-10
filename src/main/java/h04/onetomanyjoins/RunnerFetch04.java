@@ -36,7 +36,7 @@ public class RunnerFetch04 {
 
 //		System.out.println(stdRead);
 
-        //get the student name, student id, and book name from common records
+        //get   the student name, student id, and book name from common records
 
 
         String sqlQuery = "Select s.name, s.std_id, b.book_name "
