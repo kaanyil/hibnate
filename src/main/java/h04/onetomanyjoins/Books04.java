@@ -1,9 +1,8 @@
 package h04.onetomanyjoins;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
+
 @Entity
+@Table(name ="books_table")
 public class Books04 {
     @Id
     private int book_id;

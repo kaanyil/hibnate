@@ -1,17 +1,19 @@
 package h04.onetomanyjoins;
 import java.util.ArrayList;
 import java.util.List;
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
+
+
 @Entity
+@Table(name ="students_table")
 public class Students04 {
 
     @Id
     private int std_id;
 
+    @Column(name="std_name")
     private String name;
+    @Column(name="std_grade")
     private int grade;
     @OneToMany(mappedBy="student", orphanRemoval = true, cascade = CascadeType.ALL)
    //When we use orphanRemoval it is to indicate that we want to delete all related records to our child table
